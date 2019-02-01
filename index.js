@@ -55,6 +55,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+ var string = 
  function total() {
   let sum = 0
   for (let i in cart){
