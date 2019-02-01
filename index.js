@@ -53,16 +53,15 @@ function removeFromCart(item) {
   }
   return "That item is not in your cart."
 }
-
-function placeOrder(cardNumber) {
- var string = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
- function total() {
+function total() {
   let sum = 0
   for (let i in cart){
     sum += cart[i].itemPrice
     }
 return sum
   }
+function placeOrder(cardNumber) {
+ var string = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
 if (isNaN(cardNumber)) {
     return "Sorry, we don't have a credit card on file for you."
   }
