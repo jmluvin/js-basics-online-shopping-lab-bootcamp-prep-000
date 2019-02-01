@@ -67,7 +67,7 @@ if (isNaN(cardNumber)) {
     return "Sorry, we don't have a credit card on file for you."
   }
   else { 
-   newString
+  newString
   return cart.splice(0)
   }
 }
