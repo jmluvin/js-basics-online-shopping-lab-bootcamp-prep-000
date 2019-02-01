@@ -55,7 +55,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
- var string = 
+ var string = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
  function total() {
   let sum = 0
   for (let i in cart){
@@ -67,7 +67,7 @@ if (isNaN(cardNumber)) {
     return "Sorry, we don't have a credit card on file for you."
   }
   else { 
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+   string
+  return cart.splice(0)
   }
-  cart.splice(0)
 }
